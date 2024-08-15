@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Data Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Data Management</h1>
+
+        <!-- Form for adding and editing food items -->
+        <form id="food-form">
+            <h2>Add/Edit Food Item</h2>
+            <div class="form-group">
+                <label for="food-item-name">Food Item Name</label>
+                <input type="text" id="food-item-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="food-group">Food Group</label>
+                <input type="text" id="food-group">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" id="description">
+            </div>
+
+            <div class="form-group">
+                <label for="ingredients">Ingredients (comma separated)</label>
+                <input type="text" id="ingredients">
+            </div>
+
+            <div class="form-group">
+                <label for="serving-size">Serving Size</label>
+                <input type="text" id="serving-size">
+            </div>
+
+            <div class="form-group">
+                <label for="certifications">Certifications (comma separated)</label>
+                <input type="text" id="certifications">
+            </div>
+
+            <div class="form-group">
+                <label for="health-benefits">Health Benefits (comma separated)</label>
+                <input type="text" id="health-benefits">
+            </div>
+
+            <div class="form-group">
+                <label for="country-of-origin">Country of Origin</label>
+                <input type="text" id="country-of-origin">
+            </div>
+
+            <div class="form-group">
+                <label for="preparation-methods">Preparation Methods (comma separated)</label>
+                <input type="text" id="preparation-methods">
+            </div>
+
+            <div class="form-group">
+                <label for="dietary-restrictions">Dietary Restrictions (comma separated)</label>
+                <input type="text" id="dietary-restrictions">
+            </div>
+
+            <div class="form-group">
+                <label for="brand-or-manufacturer">Brand or Manufacturer</label>
+                <input type="text" id="brand-or-manufacturer">
+            </div>
+
+            <div class="form-group">
+                <label for="fat">Fat (g)</label>
+                <input type="number" id="fat">
+            </div>
+
+            <div class="form-group">
+                <label for="fiber">Fiber (g)</label>
+                <input type="number" id="fiber">
+            </div>
+
+            <div class="form-group">
+                <label for="protein">Protein (g)</label>
+                <input type="number" id="protein">
+            </div>
+
+            <div class="form-group">
+                <label for="calories">Calories</label>
+                <input type="number" id="calories">
+            </div>
+
+            <div class="form-group">
+                <label for="carbohydrates">Carbohydrates (g)</label>
+                <input type="number" id="carbohydrates">
+            </div>
+
+            <div class="form-group">
+                <label for="allergens">Allergens (comma separated)</label>
+                <input type="text" id="allergens">
+            </div>
+
+            <button type="submit">Save Food Item</button>
+        </form>
+
+        <!-- Food items list -->
+        <h2>Food Items</h2>
+        <table id="food-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Group</th>
+                    <th>Description</th>
+                    <th>Ingredients</th>
+                    <th>Serving Size</th>
+                    <th>Certifications</th>
+                    <th>Health Benefits</th>
+                    <th>Country of Origin</th>
+                    <th>Preparation Methods</th>
+                    <th>Dietary Restrictions</th>
+                    <th>Brand/Manufacturer</th>
+                    <th>Nutrition (Fat, Fiber, Protein, Calories, Carbs)</th>
+                    <th>Allergens</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Food items will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
