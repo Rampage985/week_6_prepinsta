@@ -7,7 +7,11 @@ const port = 3200;
 env.config();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "*", // Allow requests from any origin
+  methods: ["GET", "POST", "PUT", "DELETE"], // Allow these HTTP methods
+  allowedHeaders: ["Content-Type"] // Allow these headers
+}));
 require("./db/conn");
 
 const food = require("./model/foodinfo");

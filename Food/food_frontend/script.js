@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3200";
+const API_URL = "https://week-6-prepinsta.vercel.app/";
 
 let isEditing = false;
 let currentEditingFoodName = "";
