@@ -13,11 +13,13 @@
         <!-- Form to add new food item -->
         <div class="form-container">
             <h1>Add New Food Item</h1>
-            <form id="addFoodForm">
-                <input type="text" id="food_item_name" placeholder="Food Item Name" required />
-                <input type="text" id="food_group" placeholder="Food Group" required />
-                <input type="text" id="description" placeholder="Description" required />
-                <input type="text" id="ingredients" placeholder="Ingredients (comma-separated)" required />
+            <form id="food-form">
+                <div class="form-group">
+
+                    <input type="text" id="food_item_name" placeholder="Food Item Name" required />
+                    <input type="text" id="food_group" placeholder="Food Group" required />
+                    <input type="text" id="description" placeholder="Description" required />
+                    <input type="text" id="ingredients" placeholder="Ingredients (comma-separated)" required />
                 <input type="text" id="serving_size" placeholder="Serving Size" required />
                 <input type="text" id="certifications" placeholder="Certifications (comma-separated)" required />
                 <input type="text" id="health_benefits" placeholder="Health Benefits (comma-separated)" required />
@@ -27,9 +29,10 @@
                 <input type="text" id="brand_or_manufacturer" placeholder="Brand Or Manufacturer" required />
                 <input type="text" id="nutritional_information" placeholder="Nutritional Information (fat, fiber, protein, calories, carbohydrates)" required />
                 <input type="text" id="allergens" placeholder="Allergens (comma-separated)" required />
-                <button type="submit">Add Food Item</button>
+                <button type="submit">Save Food Item</button>
             </form>
         </div>
+    </div>
         
         <table id="foodTable">
             <thead>
@@ -99,7 +102,7 @@
             });
 
         // Add new food item
-        document.getElementById("addFoodForm").addEventListener("submit", async (e) => {
+        document.getElementById("food-form").addEventListener("submit", async (e) => {
             e.preventDefault();
 
             const newFoodItem = {
